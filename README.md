@@ -30,4 +30,4 @@ scoreboard players get .out distance
 This will get you the result distance, with 2 digit accuracy.
 
 ## Disadvantage
-As sin and tan^-1 value only have a few digites accuracy. Therefore, if the inputs are extreme high numbers, the results would have some inaccuracy.
+As sin and $tan^-1$ value only have a few digites accuracy. Therefore, if the inputs are extreme high numbers, the results would have some inaccuracy.
