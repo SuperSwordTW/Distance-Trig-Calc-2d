@@ -1,6 +1,3 @@
-scoreboard players set .dx distance 1
-scoreboard players set .dz distance 1
-
 execute if score .dz distance > .dx distance run scoreboard players operation .temp distance = .dx distance
 execute if score .dz distance > .dx distance run scoreboard players operation .dx distance = .dz distance
 execute if score .dz distance > .dx distance run scoreboard players operation .dz distance = .temp distance
