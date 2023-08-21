@@ -1,4 +1,4 @@
-# Distance Calculating with Trigonometry
+# Distance Calculating with Trigonometry [Optimized]
 ## Info
 When calculating a distance from 2 points, we usually use pythagorean theorem. $sqrt(a^2+b^2)=c$.
 But sqaring in Minecraft can cause some problem esspecially when we are scaling things up
@@ -10,9 +10,9 @@ Instead of relying on pythagorean theorem, we can use Trigonometry to solve the 
 Draw a right triangle from 2 points. Then $tan^-1({a \over b})$ represents theta. Since $sin(theta)$= $a \over c$.
 So, $a \over {sin(tan^-1({a \over b}))}$ would equal to $c$.
 Now we have the formula, we just need to calculate it in Minecraft.
-$sin$ can be calculated by using a marker at the origin(0,0,0) and set it's rotation, then tp it ^ ^ ^1, so the opp. side length devided by 1(hypotenuse)
-would result in the sin value.
-$tan^-1$, or inverse tangent can be calculated by setting the marker's x position, then position it's z coord to 1 and make it face the origin. Now the rotation value would be the tan^-1 value.
+$sin$ can be calculated with a few ways. Such as by using a marker at the origin(0,0,0) and set it's rotation, then tp it ^ ^ ^1, so the opp. side length devided by 1(hypotenuse)
+would result in the sin value. Altough, as you can see, maneuvering markers is not efficient, we can obeserve the domain, which is 0°~90°. Therefore, we can just create a table for every angles that would be needed. With 2 decimal place accuracy, its a 9000 elements table.
+$tan^-1$, or inverse tangent can be calculated just by using the `facing x y z` then getting the rotation, since $tan^-1$ is the angle.
 
 ## Implementation
 Install the datapack into the corresponding folder.
