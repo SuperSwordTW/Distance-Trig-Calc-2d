@@ -1,4 +1,4 @@
-2D Distance Calculating with Trigonometry [Optimized]
+###2D Distance Calculating with Trigonometry [Optimized]
 ## Info
 When calculating a distance between two points, we usually use the Pythagorean theorem. $sqrt(a^2+b^2)=c$.
 But squaring in Minecraft can cause some problems, especially when we are scaling things up
@@ -20,7 +20,8 @@ $tan^-1$, or inverse tangent, can be calculated just by using the `facing x y z`
 ## Efficiency
 
 The efficiency of this method is fairly high, as the benchmark would average around 120,000 commands.
-![Screenshot_23](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/18b6872d-72c9-476b-9f94-92aa0c039e17)
+![Screenshot_23](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/27f35da3-36ed-4816-b275-dbddde5191aa)
+
 
 which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
 
