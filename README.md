@@ -24,8 +24,8 @@ The efficiency of this method is fairly high, as the benchmark would average aro
 
 which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
 `Note that this is only for 2D distance, using this method sure can calculate 3D distance as well, but the effciency would drop by a lot.
-So if you plan on calculating 3D distance, use the entity display method. 
-Their post:`
+So if you plan on calculating 3D distance, use the entity display method. `
+Their post:
 ![Screenshot_23](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/86546315-ceda-422a-8ef7-8976cf04b10e)
 
 
