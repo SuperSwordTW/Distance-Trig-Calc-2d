@@ -7,7 +7,7 @@ Instead of relying on the Pythagorean theorem, we can use Trigonometry to solve 
 
 ![triangle](https://user-images.githubusercontent.com/63050705/223461489-503eaedc-f7fc-437e-86e1-9686210dd232.png)
 
-Draw a right triangle from two points. Then $tan^-1({a \over b})$ represents theta. Since $sin(theta)$= $a \over c$.
+Draw a right triangle from two points. Then $tan^-1({a \over b})$ represents $θ$. Since $sin(θ)$= $a \over c$.
 So, $a \over {sin(tan^-1({a \over b}))}$ would equal $c$.
 
 Now that we have the formula, we need to calculate it in Minecraft.
