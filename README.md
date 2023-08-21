@@ -26,7 +26,8 @@ The efficiency of this method is fairly well, as the benchmark would average aro
 which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
 `Note that this is only for 2D distance; using this method, you can calculate 3D distance as well, but the efficiency would drop by a catastrophic amount.
 So if you plan on calculating 3D distance, use the entity display method. `
-Their post:(You can also found it in the minecraft command community discord server [here]: https://discord.com/channels/154777837382008833/157097006500806656/1139627709690028092)
+Their post:(You can also found it in the minecraft command community discord server [here])
+![here]: https://discord.com/channels/154777837382008833/157097006500806656/1139627709690028092
 ![Screenshot_24](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/ee1e84b1-c459-4d2c-b7ef-6fe85dad4ebb)
 
 
