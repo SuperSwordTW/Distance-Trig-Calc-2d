@@ -22,10 +22,14 @@ $tan^-1$, or inverse tangent, can be calculated just by using the `facing x y z`
 The efficiency of this method is fairly high, as the benchmark would average around 120,000 commands.
 ![Screenshot_23](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/27f35da3-36ed-4816-b275-dbddde5191aa)
 
-
 which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
+`Note that this is only for 2D distance, using this method sure can calculate 3D distance as well, but the effciency would drop by a lot.
+So if you plan on calculating 3D distance, use the entity display method. 
+Their post:`
+![Screenshot_23](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/86546315-ceda-422a-8ef7-8976cf04b10e)
 
-Of course, using Newton rasphon on the scoreboard to calculate square root is still the fastest, but the problem with squaring would be a major problem, as your inputs cannot reach over 10000, or else it would overflow.
+
+Of course, using Newton rasphon on the scoreboard to calculate the square root is still the fastest, but the problem with squaring would be a major problem, as your inputs cannot reach over 10000, or else it would overflow.
 
 
 ## Implementation
@@ -41,7 +45,10 @@ Set the change in x, and z on the scoreboard.
 function distance:start
 scoreboard players get .out distance
 ```
-This will get you the result distance, with 2-digit accuracy.
+This will get you the result distance with 2-digit accuracy.
 
 ## Disadvantage
-$sin$ and $tan^-1$ values only have a few digits accuracy. Therefore, if the inputs are extremely high numbers, the results would be inaccurate.
+Since getting 2-digit accuracy requires scaling up the numbers. So any numbers that is above 100,000 would overflow, but why would you need such high number anyway.
+If you incounter real high numbers, you can always use one decimal place instead.
+$sin$ and $tan^-1$ values saved in a few digits. Therefore, if the inputs are extremely high numbers, the results would be inaccurate but mostly in the second decimal place.
+Overall, it's some minor errors that shouldn't effect it's usage.
