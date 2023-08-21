@@ -1,30 +1,40 @@
-# Distance Calculating with Trigonometry [Optimized]
+2D Distance Calculating with Trigonometry [Optimized]
 ## Info
-When calculating a distance from 2 points, we usually use pythagorean theorem. $sqrt(a^2+b^2)=c$.
-But sqaring in Minecraft can cause some problem esspecially when we are scaling things up
+When calculating a distance between two points, we usually use the Pythagorean theorem. $sqrt(a^2+b^2)=c$.
+But squaring in Minecraft can cause some problems, especially when we are scaling things up
 Because it can easily run out of a scorebaord space, which is a int.
 Instead of relying on pythagorean theorem, we can use Trigonometry to solve the problem.
 
 ![triangle](https://user-images.githubusercontent.com/63050705/223461489-503eaedc-f7fc-437e-86e1-9686210dd232.png)
 
-Draw a right triangle from 2 points. Then $tan^-1({a \over b})$ represents theta. Since $sin(theta)$= $a \over c$.
-So, $a \over {sin(tan^-1({a \over b}))}$ would equal to $c$.
-Now we have the formula, we just need to calculate it in Minecraft.
-$sin$ can be calculated with a few ways. Such as by using a marker at the origin(0,0,0) and set it's rotation, then tp it ^ ^ ^1, so the opp. side length devided by 1(hypotenuse)
-would result in the sin value. Altough, as you can see, maneuvering markers is not efficient, we can obeserve the domain, which is 0°~90°. Therefore, we can just create a table for every angles that would be needed. With 2 decimal place accuracy, its a 9000 elements table.
-$tan^-1$, or inverse tangent can be calculated just by using the `facing x y z` then getting the rotation, since $tan^-1$ is the angle.
+Draw a right triangle from two points. Then $tan^-1({a \over b})$ represents theta. Since $sin(theta)$= $a \over c$.
+So, $a \over {sin(tan^-1({a \over b}))}$ would equal $c$.
+
+Now that we have the formula, we just need to calculate it in Minecraft.
+
+$sin$ can be calculated in a few ways. Such as by using a marker at the origin (0,0,0) and set it's rotation, then tp it ^ ^ ^1, so the opposite side length is divided by 1 (hypotenuse)
+would result in a sin value. Although, as you can see, maneuvering markers is not efficient, we can obeserve the domain, which is 0°~90°. Therefore, we can just create a table for every angles that would be needed. With 2 decimal places of accuracy, it's a 9000-element table.
+
+$tan^-1$, or inverse tangent, can be calculated just by using the `facing x y z` then getting the rotation since $tan^-1$ is the angle.
+
+## Efficiency
+
+The efficiency of this method is fairly high, as the benchmark would average around 120,000 commands.
+which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
+
+Of course, using newton rasphon on scoreboard to calculate square root is still the fastest, but the problem with squaring would be a major problem, as your inputs cannot reach over 10000, or else it would over flow.
+
 
 ## Implementation
 Install the datapack into the corresponding folder.
 ```
-scoreboard players set dx distance [value]
-scoreboard players set dy distance [value]
-scoreboard players set dz distance [value]
+scoreboard players set .dx distance [value]
+scoreboard players set .dz distance [value]
 ```
-Set the change in x, y, z with scoreboard.
+Set the change in x, z with scoreboard.
 ***dx*** and ***dz*** value must be ***Positive***
-Leave y in 0 if you want to calculate 2d distance.
 ```
+function distance:start
 scoreboard players get .out distance
 ```
 This will get you the result distance, with 2 digit accuracy.
