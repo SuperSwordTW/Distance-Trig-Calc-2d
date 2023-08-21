@@ -3,7 +3,7 @@
 ## Info
 When calculating a distance between two points, we usually use the Pythagorean theorem. $sqrt(a^2+b^2)=c$.
 But squaring in Minecraft can cause some problems, especially when we are scaling things up
-Because it can easily run out of a scoreboard space, which is an int (21474836473).
+Because it can easily run out of a scoreboard space, which is an int (2147483647).
 Instead of relying on the Pythagorean theorem, we can use Trigonometry to solve the problem.
 
 ![triangle](https://user-images.githubusercontent.com/63050705/223461489-503eaedc-f7fc-437e-86e1-9686210dd232.png)
