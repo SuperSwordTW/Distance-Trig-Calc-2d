@@ -8,7 +8,7 @@ Instead of relying on the Pythagorean theorem, we can use Trigonometry to solve 
 
 ![triangle](https://user-images.githubusercontent.com/63050705/223461489-503eaedc-f7fc-437e-86e1-9686210dd232.png)
 
-Draw a right triangle from two points. Then $tan^-1({a \over b})$ represents $θ$. Since $sin(θ)$= $a \over c$.
+Draw a right triangle with two points. Then $tan^-1({a \over b})$ represents $θ$. Since $sin(θ)$= $a \over c$.
 So, $a \over {sin(tan^-1({a \over b}))}$ would equal $c$.
 
 Now that we have the formula, we need to calculate it in Minecraft.
@@ -26,7 +26,7 @@ The efficiency of this method is fairly well, as the benchmark would average aro
 which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
 `Note that this is only for 2D distance; using this method, you can calculate 3D distance as well, but the efficiency would drop by a catastrophic amount.
 So if you plan on calculating 3D distance, use the entity display method. `
-Their post:(You can also found it in the minecraft command community discord server)
+Their post:(You can also find it in the minecraft command community discord server)
 ![Screenshot_24](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/ee1e84b1-c459-4d2c-b7ef-6fe85dad4ebb)
 
 
@@ -41,16 +41,16 @@ Install the datapack into the corresponding folder.
 scoreboard players set .dx distance [value]
 scoreboard players set .dz distance [value]
 ```
-Set the change in x, and z on the scoreboard.
+Set the changes in x and z on the scoreboard.
 ***dx*** and ***dz*** value must be ***Positive***
 ```
 function distance:start
 scoreboard players get .out distance
 ```
-This will get you the result distance with 2-digit accuracy.
+This will give you the result distance with 2-digit accuracy.
 
 ## Disadvantage
-Since getting 2-digit accuracy requires scaling up the numbers. So any numbers that is above 100,000 would overflow, but why would you need such high number anyway.
-If you incounter real high numbers, you can always use one decimal place instead.
-$sin$ and $tan^-1$ values saved in a few digits. Therefore, if the inputs are extremely high numbers, the results would be inaccurate but mostly in the second decimal place.
-Overall, it's some minor errors that shouldn't effect it's usage.
+Since getting 2-digit accuracy requires scaling up the numbers. So any number that is above 100,000 would overflow, but why would you need such a high number anyway?
+If you encounter really high numbers, you can always use one decimal place instead.
+$sin$ and $tan^-1$ values are saved in a few digits. Therefore, if the inputs are extremely high numbers, the results would be inaccurate, but mostly in the second decimal place.
+Overall, there are some minor errors that shouldn't effect it's usage.
