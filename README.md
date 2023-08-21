@@ -3,7 +3,7 @@
 ## Info
 When calculating a distance between two points, we usually use the Pythagorean theorem. $sqrt(a^2+b^2)=c$.
 But squaring in Minecraft can cause some problems, especially when we are scaling things up
-Because it can easily run out of a scoreboard space, which is an int(21474836473).
+Because it can easily run out of a scoreboard space, which is an int (21474836473).
 Instead of relying on the Pythagorean theorem, we can use Trigonometry to solve the problem.
 
 ![triangle](https://user-images.githubusercontent.com/63050705/223461489-503eaedc-f7fc-437e-86e1-9686210dd232.png)
@@ -24,7 +24,7 @@ The efficiency of this method is fairly well, as the benchmark would average aro
 ![Screenshot_23](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/27f35da3-36ed-4816-b275-dbddde5191aa)
 
 which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
-`Note that this is only for 2D distance, using this method sure can calculate 3D distance as well, but the effciency would drop by a lot.
+`Note that this is only for 2D distance; using this method, you can calculate 3D distance as well, but the efficiency would drop by a catastrophic amount.
 So if you plan on calculating 3D distance, use the entity display method. `
 Their post:
 ![Screenshot_24](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/ee1e84b1-c459-4d2c-b7ef-6fe85dad4ebb)
