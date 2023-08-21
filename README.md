@@ -26,9 +26,6 @@ The efficiency of this method is fairly well, as the benchmark would average aro
 which, if compared to the entity display method by Triton, benchmark would average around 90,000 commands.
 `Note that this is only for 2D distance; using this method, you can calculate 3D distance as well, but the efficiency would drop by a catastrophic amount.
 So if you plan on calculating 3D distance, use the entity display method. `
-Their post:(You can also find it in the minecraft command community discord server)
-![Screenshot_24](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/ee1e84b1-c459-4d2c-b7ef-6fe85dad4ebb)
-
 
 
 Of course, using Newton rasphon on the scoreboard to calculate the square root is still the fastest, but the problem with squaring would be a major problem, as your inputs cannot reach over 10000, or else it would overflow.
