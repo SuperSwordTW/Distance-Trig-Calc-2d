@@ -32,6 +32,7 @@ Of course, using Newton rasphon on the scoreboard to calculate the square root i
 
 
 ## Implementation
+Note this uses macros, so you need to use it in snapshot, or in 1.20 when it comes out.
 Install the datapack into the corresponding folder.
 `distance:load` function is required to place it in load, or you can manually run it once in the game.
 ```
