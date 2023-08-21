@@ -26,7 +26,8 @@ which, if compared to the entity display method by Triton, benchmark would avera
 `Note that this is only for 2D distance, using this method sure can calculate 3D distance as well, but the effciency would drop by a lot.
 So if you plan on calculating 3D distance, use the entity display method. `
 Their post:
-![Screenshot_23](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/86546315-ceda-422a-8ef7-8976cf04b10e)
+![Screenshot_24](https://github.com/SuperSwordTW/Distance-Trig-Calc/assets/63050705/ee1e84b1-c459-4d2c-b7ef-6fe85dad4ebb)
+
 
 
 Of course, using Newton rasphon on the scoreboard to calculate the square root is still the fastest, but the problem with squaring would be a major problem, as your inputs cannot reach over 10000, or else it would overflow.
