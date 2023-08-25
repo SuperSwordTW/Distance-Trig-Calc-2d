@@ -1,3 +1,4 @@
+scoreboard players set .swap distance 0
 execute if score .dz distance > .dx distance run scoreboard players set .swap distance 1
 execute if score .swap distance matches 1 run scoreboard players operation .temp distance = .dx distance
 execute if score .swap distance matches 1 run scoreboard players operation .dx distance = .dz distance
