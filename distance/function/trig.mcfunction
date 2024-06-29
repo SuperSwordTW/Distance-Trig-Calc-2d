@@ -1,6 +1,9 @@
 # tan^-1(a/b)
-$execute positioned 0.5 0.0 0.5 facing -$(x) 0.0 $(z) run tp 0-0-0-0-1 ~ ~ ~ ~ ~
-execute store result storage index x int 1 run data get entity 0-0-0-0-1 Rotation[0] 100
+scoreboard players operation .tdx distance = .dx distance
+scoreboard players operation .tdx distance *= .100 distance
+scoreboard players operation .tdx distance /= .dz distance
+function distance:math/atan
+
 # sin(tan^-1(a/b))
 function distance:math/sin with storage index
 scoreboard players operation .dx distance *= .100000 distance

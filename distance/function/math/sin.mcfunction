@@ -1,0 +1,1 @@
+$execute store result score .sine distance run data get storage sine arr[$(x)]
