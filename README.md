@@ -11,7 +11,7 @@ So, $a \over {sin(tan^-1({a \over b}))}$ would equal $c$.
 
 Now that we have the formula, we need to calculate it in Minecraft.
 
-$sin$ can be calculated in a few ways. Such as by using a marker at the origin (0,0,0) and setting its rotation, then tp it ^ ^ ^1, so the opposite side length is divided by 1 (hypotenuse)
+$sine$ can be calculated in a few ways. Such as by using a marker at the origin (0,0,0) and setting its rotation, then tp it ^ ^ ^1, so the opposite side length is divided by 1 (hypotenuse)
 would result in a sin value. Although, as you can see, maneuvering markers is not efficient. Instead, we can obeserve the domain, which is 0°~90°. Therefore, we can just create a table for every angle that would be needed. With 2 decimal places of accuracy, it's a 9000-element table.
 
 With some observation on the $tan^-1$, or inverse tangent function, we see that as value passed around 60 the result is really just approaching 90 deg. So we just assume it is 90 deg.
