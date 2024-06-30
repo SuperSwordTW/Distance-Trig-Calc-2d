@@ -1,4 +1,4 @@
-Fast 2D Distance Calculating with Trigonometry [Optimized]
+Fast 2D Distance Calculating with Trigonometry
 ====================
 ## Info
 When calculating a distance between two points, we usually use the Pythagorean theorem. $\sqrt{a^2+b^2}=c$.
