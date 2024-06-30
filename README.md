@@ -1,7 +1,7 @@
 Fast 2D Distance Calculating with Trigonometry [Optimized]
 ====================
 ## Info
-When calculating a distance between two points, we usually use the Pythagorean theorem. $sqrt(a^2+b^2)=c$.
+When calculating a distance between two points, we usually use the Pythagorean theorem. $\sqrt{a^2+b^2}=c$.
 But squaring in Minecraft can cause some problems, especially when we are scaling things up
 Because it can easily run out of a scoreboard space, which is an int (2147483647).
 Instead of relying on the Pythagorean theorem, we can use Trigonometry to solve the problem.
