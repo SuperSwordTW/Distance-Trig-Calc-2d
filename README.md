@@ -21,7 +21,7 @@ And why stop here, we can create a table that maps values to %1/sin(tan^-1(x))%.
 
 ## Efficiency
 
-The efficiency of this method is fairly good; it's tested to be faster than the entity display method and 4th-iteration Newton rasphon.
+The efficiency of this method is fairly good; it's tested to be faster than the entity display method and 4th-iteration Newton rasphon by quite a bit.
 
 `Note that this is only for 2D distance; using this method, you can calculate 3D distance as well, but the efficiency would drop a bit. It is almost the same as the entity display method.
 So if you plan on calculating 3D distance, use the entity display method. `
