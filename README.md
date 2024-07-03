@@ -17,7 +17,7 @@ would result in a sin value. Although, as you can see, maneuvering markers is no
 With some observation on the $tan^-1$, or inverse tangent function, we see that as the value passes around 60, the result is just approaching 90 deg. So we just assume it is 90 degrees.
 Hence, using the same logic, we can create a table for it.
 
-And why stop here, we can create a table that maps values to %1/sin(tan^-1(x))%. Now to get our distance, we only need to multiply $a$ which is the side length to this value.
+And why stop here, we can create a table that maps values to $1/sin(tan^-1(x))$. Now to get our distance, we only need to multiply $a$ which is the side length to this value.
 
 ## Efficiency
 
