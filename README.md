@@ -17,6 +17,8 @@ would result in a sin value. Although, as you can see, maneuvering markers is no
 With some observation on the $tan^-1$, or inverse tangent function, we see that as the value passes around 60, the result is just approaching 90 deg. So we just assume it is 90 degrees.
 Hence, using the same logic, we can create a table for it.
 
+And why stop here, we can create a table that maps values to %1/sin(tan^-1(x))%. Now to get our distance, we only need to multiply $a$ which is the side length to this value.
+
 ## Efficiency
 
 The efficiency of this method is fairly good; it's tested to be faster than the entity display method and 4th-iteration Newton rasphon.
@@ -39,10 +41,8 @@ Set the changes in x and z on the scoreboard.
 function distance:start
 scoreboard players get .out distance
 ```
-This will give you the result distance with 2-decimal place accuracy.
+This will give you the result distance with 3-decimal place accuracy.
 
 ## Accuracy
-Since getting 2-digit accuracy requires scaling up the numbers, any number above 100,000 would overflow, but why would you need such a high number anyway?
-If you encounter high numbers, you can always use one decimal place instead.
-$sin$ and $tan^-1$ values are saved in a few digits. Therefore, if the inputs are substantial, the results would be inaccurate, but mostly in the second decimal place.
+$1/sin(tan^-1)$ values are saved in a few digits. Therefore, if the inputs are substantial, the results would be inaccurate, but mostly in the third decimal place.
 Overall, some minor errors shouldn't affect its usage.
