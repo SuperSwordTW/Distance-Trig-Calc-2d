@@ -23,8 +23,7 @@ And why stop here, we can create a table that maps values to $1/sin(tan^-1(x))$.
 
 The efficiency of this method is fairly good; it's tested to be faster than the entity display method and 4th-iteration Newton rasphon by quite a bit.
 
-`Note that this is only for 2D distance; using this method, you can calculate 3D distance as well, but the efficiency would drop a bit. It is almost the same as the entity display method.
-So if you plan on calculating 3D distance, use the entity display method. `
+`Note that this is only for 2D distance; If you are intended to calculate 3d distance there is a modification of this pack use that instead: (Distance-Trig-Calc-3d)[https://github.com/SuperSwordTW/Distance-Trig-Calc-3d] `
 
 ## Implementation
 Note that this pack is made in 1.21, so the naming convention of the folder `functions` has become `function`. If you want to use this in 1.20, you can change it back.
